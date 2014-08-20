@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * ABC框架入口类
+ */
 class ABC
 {
     private $url_lang = 'en'; // 语言，默认为英语
@@ -48,6 +51,9 @@ class ABC
             }
     }
 
+    /**
+     * 字符串截取
+     */
     private function splitUrl()
     {
         if (isset($_GET['url'])) {
