@@ -1,0 +1,10 @@
+<?php
+        include 'Public/tpl/header.html';
+        include 'Public/tpl/menu.html';
+        $songs_model = $this->loadModel('Songs');
+        $songs = $songs_model->getAllSongs();
+        $stats_model = $this->loadModel('Stats');
+        $amount_of_songs = $stats_model->getAmountOfSongs();
+		print_r($songs);
+        include 'Public/tpl/footer.html';
+?>

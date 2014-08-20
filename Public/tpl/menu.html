@@ -1,0 +1,48 @@
+<div id = "menu" class = "container">
+    <nav class = "nav" role = "navigation">
+        <div class = "navbar-header">
+            <button type = "button" class = "navbar-toggle collapsed" data-toggle = "collapse" data-target = "#navbar-collapse-02">
+                <span class = "sr-only">Toggle navigation</span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+            </button>
+            <a href = "#">
+                <img src = "<?php echo ROOT_URL; ?>Public/img/logo.png">
+            </a>
+        </div>
+        <div class = "collapse navbar-collapse" id = "navbar-collapse-02">
+            <ul class = "nav navbar-nav">
+                <li>
+                    <a href = "<?php echo U($this->url_lang.'/Index/home'); ?>"><?php echo _('Home'); ?></a>
+                </li>
+                <li>
+                    <a href = "<?php echo U($this->url_lang.'/Index/mobile'); ?>"><span class = "spade"></span><?php echo _('Mobile'); ?></a>
+                </li>
+                <li><a href = "<?php echo U($this->url_lang.'/Index/games'); ?>"><span class = "hearts"></span><?php echo _('Games'); ?></a>
+                </li>
+                <li class = "dropdown">
+                    <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+                        <span class = "titoni"></span><?php echo _('Tournaments'); ?><b class = "caret"></b>
+                    </a>
+                    <span class = "dropdown-arrow dropdown-arrow-inverse"></span>
+                    <ul class = "dropdown-menu dropdown-inverse pull-right">
+                        <li class = "dropdown-submenu">
+                            <a href = "#" tabindex = "-1" data-toggle = "dropdown">Another sub action</a>
+                            <ul class = "dropdown-menu dropdown-inverse">
+                                <li><a href = "#" tabindex = "-1">Sub Action</a></li>
+                                <li><a href = "#" tabindex = "-1">Another sub action</a></li>
+                                <li><a href = "#" tabindex = "-1">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li><a href = "#" tabindex = "-1">Sub Action</a></li>
+                        <li><a href = "#" tabindex = "-1">Another sub action</a></li>
+                        <li><a href = "#" tabindex = "-1">Something else here</a></li>
+                    </ul>
+                </li>
+                <li><a href = "<?php echo U($this->url_lang.'/index/school'); ?>" column = "School"><span class = "diamond"></span><?php echo _('School'); ?></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
