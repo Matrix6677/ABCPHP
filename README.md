@@ -100,3 +100,18 @@ The URL access rules:
 	│  │ ├─Index_songs.html
 	│  │ ├─Home_index.html
 	│  │ └─...							更多视图
+
+###4.Public
+    Public				默认应用目录
+    ├─css				样式资源目录
+    ├─fonts				字体资源目录
+    ├─img				图片资源目录
+    ├─js				脚本资源目录
+    ├─locale			语言资源目录
+	│ ├─en
+	│ │	└─LC_MESSAGES
+	│ │		├─abc.mo
+	│ │		└─abc.po
+	│ ├─de
+	│ └─ja	
+    ├─tpl				公共模板资源目录
