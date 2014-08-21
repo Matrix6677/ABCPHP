@@ -69,8 +69,8 @@ The URL access rules:
     │ │	├─Controller.class.php	控制器类
     │ │	├─Model.class.php		模型类
     │ │	└─...					其他核心类
-    │ ├─Org			 			工具类库
-    │ └─...			 			其他更多类库
+    │ ├─Org						工具类库
+    │ └─...						其他更多类库
     └─ABC.php		 框架入口类
 
 ###3.Application
@@ -82,10 +82,10 @@ The URL access rules:
 
 每个模块是相对独立的，其目录结构如下：
 
-	├─Module        					模块目录       
+	├─Module							模块目录       
 	│  ├─Common							公共函数目录
 	│  │ └─function.php
-	│  ├─Conf       					配置文件目录
+	│  ├─Conf							配置文件目录
 	│  │ └─config.php 
 	│  ├─Controller  					控制器目录
 	│  │ ├─IndexController.class.php
@@ -95,7 +95,7 @@ The URL access rules:
 	│  │ ├─SongsModel.class.php
 	│  │ ├─UsersModel.class.php
 	│  │ └─...							更多数据库模型类
-	│  ├─View        					视图目录
+	│  ├─View							视图目录
 	│  │ ├─Index_index.html
 	│  │ ├─Index_songs.html
 	│  │ ├─Home_index.html
