@@ -9,11 +9,11 @@
 
 2. Edit profile of php  `php.ini`, enable `gettext`.
 
-    	`extension=php_gettext.dll`
+    	extension=php_gettext.dll
 
 3. Change the .htaccess file from
 
-		`RewriteBase /ABCPHP/`
+		RewriteBase /ABCPHP/
 
 	to where you put this project, relative to the web root folder (usually /var/www). So when you put this project into the web root, like directly in /var/www, then the line should look like or can be commented out:
     
