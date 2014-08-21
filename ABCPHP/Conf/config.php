@@ -1,4 +1,5 @@
 <?php
+// 系统配置文件
 return array(
     'DB_TYPE' => 'mysql', // 数据库类型
     'DB_HOST' => '127.0.0.1', // 服务器地址

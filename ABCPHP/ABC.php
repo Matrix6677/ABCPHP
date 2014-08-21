@@ -47,7 +47,7 @@ class ABC
                 $index = new IndexController($this->url_lang);
                 $index->index();
             } else {
-                redirect(U('en/Index/index'), 3, '指向错误，5秒后将自动跳到首页！');
+                redirect(U('en/Index/index'), 3, '指向错误，3秒后将自动跳到首页！');
             }
     }
 

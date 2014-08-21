@@ -1,4 +1,8 @@
 <?php
+
+/**
+ * 系统核心函数库
+ */
 // 语言设置
 function setLang($lang)
 {

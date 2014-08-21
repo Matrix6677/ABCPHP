@@ -3,8 +3,8 @@ if (file_exists('vendor/autoload.php')) {
     require 'vendor/autoload.php';
 }
 
-// load Application class
+// 加载框架入口类
 require 'ABCPHP/ABC.php';
-                                                
-// start the Application
+
+// 开启应用
 $app = new ABC();

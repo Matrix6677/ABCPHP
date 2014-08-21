@@ -2,11 +2,9 @@
 
 class SongsModel
 {
-    /**
-     * Every model needs a database connection, passed to the model
-     * @param object $db A PDO database connection
-     */
-    function __construct($db) {
+
+    function __construct($db)
+    {
         try {
             $this->db = $db;
         } catch (PDOException $e) {
@@ -22,7 +20,7 @@ class SongsModel
         $sql = "SELECT id, artist, track, link FROM song";
         $query = $this->db->prepare($sql);
         $query->execute();
-
+        
         // fetchAll() is the PDO method that gets all result rows, here in object-style because we defined this in
         // libs/controller.php! If you prefer to get an associative array as the result, then do
         // $query->fetchAll(PDO::FETCH_ASSOC); or change libs/controller.php's PDO options to
@@ -42,10 +40,14 @@ class SongsModel
         $artist = strip_tags($artist);
         $track = strip_tags($track);
         $link = strip_tags($link);
-
+        
         $sql = "INSERT INTO song (artist, track, link) VALUES (:artist, :track, :link)";
         $query = $this->db->prepare($sql);
-        $query->execute(array(':artist' => $artist, ':track' => $track, ':link' => $link));
+        $query->execute(array(
+            ':artist' => $artist,
+            ':track' => $track,
+            ':link' => $link
+        ));
     }
 
     /**
@@ -58,6 +60,8 @@ class SongsModel
     {
         $sql = "DELETE FROM song WHERE id = :song_id";
         $query = $this->db->prepare($sql);
-        $query->execute(array(':song_id' => $song_id));
+        $query->execute(array(
+            ':song_id' => $song_id
+        ));
     }
 }
