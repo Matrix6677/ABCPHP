@@ -114,4 +114,4 @@ The URL access rules:
 	│ │		└─abc.po
 	│ ├─de
 	│ └─ja	
-    ├─tpl				公共模板资源目录
+    ├─tpl				公共模板资源目录 
