@@ -1,6 +1,6 @@
-# ABCPHP v1.2
+# ABCPHP v1.3
 
-**ABCPHP** is an open source php framwork based on [php-mvc](https://github.com/panique/php-mvc), the main purpose is to build an **international** website.
+**ABCPHP** is an open source PHP framwork based on [php-mvc](https://github.com/panique/php-mvc), the main purpose is to build an **international** website.
 
 ##Installation
 1. First, `git clone` this project into your website folder.
