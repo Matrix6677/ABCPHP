@@ -5,7 +5,7 @@
 ##Installation
 1. First, `git clone` this project into your website folder.
 
-    	`git clone https://github.com/galwaycat00/ABCPHP.git`
+    	git clone https://github.com/galwaycat00/ABCPHP.git
 
 2. Edit profile of php  `php.ini`, enable `gettext`.
 
@@ -17,7 +17,7 @@
 
 	to where you put this project, relative to the web root folder (usually /var/www). So when you put this project into the web root, like directly in /var/www, then the line should look like or can be commented out:
     
-		`RewriteBase /`
+		RewriteBase /
 
 	If you have put the project into a sub-folder, then put the name of the sub-folder here:
 
@@ -45,6 +45,3 @@
 You can enter the following URL in your browser after completing the above steps.
 
 	http://127.0.0.1/ABCPHP/
-
-
-
