@@ -23,7 +23,7 @@ class ABC
         setLang($this->url_lang); // 设置语言
         if (file_exists(APP_PATH . $this->url_lang . '/Controller/' . $this->url_controller . 'Controller.class.php')) {
             include APP_PATH . $this->url_lang . '/Controller/' . $this->url_controller . 'Controller.class.php';
-            if (file_exists(APP_PATH . $this->url_lang . '/Conf/config.php')) {
+            if (file_exists(APP_PATH . $this->url_lang . '/Conf/config.php')) { // 加载模块配置
                 self::$config = array_merge(self::$config, include APP_PATH . $this->url_lang . '/Conf/config.php');
             }
             $this->url_controller .= 'Controller';

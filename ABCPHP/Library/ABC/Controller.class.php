@@ -32,7 +32,7 @@ class Controller
     public function loadModel($model_name)
     {
         $model_name .= 'Model';
-        require APP_PATH . $this->url_lang . '/Models/' . $model_name . '.class.php';
+        include APP_PATH . $this->url_lang . '/Models/' . $model_name . '.class.php';
         return new $model_name($this->db);
     }
 }
